@@ -1,0 +1,24 @@
+#topContainer{
+    background-color: blue;
+    padding: 3vw;
+}
+#topContainer h2 {
+    color: white;
+}
+#inputs {
+    width:50%;
+}
+#weather{
+    background-color:lightgray;
+    padding-bottom: 8em;
+}
+#weather p {
+    margin: auto;
+    border: 1px solid black;
+    padding: 1vw;
+    margin: .5vw;
+}
+#weather p span {
+    color: cornflowerblue;
+    font-weight: bolder;
+}

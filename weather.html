@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body onload="getSetLocation()">
+<div class="container-fluid" id = "topContainer">
+    <h2 id="topHeading">Please enter a city and state to find out the current weather:</h2>
+    <div id="inputs">
+City:<input type="text" id="city" class="form-control" placeholder="ex: Phoenix"><br>
+State: (two letters) <input type="text" id="state" class="form-control" placeholder="ex: AZ"><br>
+    </div>
+<button type="button" onclick="getLocation()">Get Local Weather</button>
+<button type="button" onclick="setLocation()">Set My Location</button>
+<button type="button" onclick="clearLocation()">Clear My Location</button>
+</div>
+<div id="weather" class="container-fluid">
+<p>Location: <span id="location"></span></p>
+<p>Current Temperature: <span id="temp"></span></p>
+<p>Current Wind: <span id="wind"></span></p>
+<script src="./script.js"></script>
+    <h3>LOCAL LOCATION</h3>
+    <p id="localState"></p>
+    <p id="localCity"></p>
+</div>
+</body>
+</html>
